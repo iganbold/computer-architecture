@@ -1,0 +1,42 @@
+| Wirelist created using version 5.2.
+V 5.2
+DESIGN_MAY_CONTAIN_RIPPERS__RECOMPILATION_AND_RELINKING_WITH_RIPPER_VERSION_OF_VIEWBASE_REQUIRED
+K 242265249900 c-xor21
+DW c-xor21
+|Q myLabs:c-not1 1
+AS myLabs:c-not1 PINORDER=A QN
+AS myLabs:c-not1 INOV_VER_REC=14:53_1-24-17
+|Q myLabs:c-or21 1
+AS myLabs:c-or21 PINORDER=A B Q
+AS myLabs:c-or21 INOV_VER_REC=14:43_1-24-17
+AS builtin:in PINORDER=IN
+AS builtin:in IN
+AP builtin:in 1 PINTYPE=IN
+|Q myLabs:custtom_and_gate_2in_1out 1
+AS myLabs:custtom_and_gate_2in_1out PINORDER=A B Q
+AS myLabs:custtom_and_gate_2in_1out INOV_VER_REC=14:25_1-24-17
+AS builtin:out OUT
+AS builtin:out PINORDER=OUT
+AP builtin:out 1 PINTYPE=OUT
+W myLabs:c-not1 $1I6
+I $1I6 myLabs:c-not1 B $1N21 
+|R 14:53_1-24-17
+W myLabs:c-or21 $1I2
+I $1I2 myLabs:c-or21 $1N23 $1N25 Q 
+|R 14:43_1-24-17
+P builtin:in A
+I A builtin:in A 
+W myLabs:custtom_and_gate_2in_1out $1I4
+I $1I4 myLabs:custtom_and_gate_2in_1out $1N13 B $1N23 
+|R 14:25_1-24-17
+W myLabs:custtom_and_gate_2in_1out $1I3
+I $1I3 myLabs:custtom_and_gate_2in_1out A $1N21 $1N25 
+|R 14:25_1-24-17
+P builtin:in B
+I B builtin:in B 
+P builtin:out Q
+I Q builtin:out Q 
+W myLabs:c-not1 $1I1
+I $1I1 myLabs:c-not1 A $1N13 
+|R 14:53_1-24-17
+EW

@@ -1,0 +1,27 @@
+V 5.11
+|
+| Wirelist created using VIEWSIM WIRELISTER 6.08
+| Using initialization file 'c:\mentorgraphics_2004\2004\standard\vsm.ini'
+|    Using 24 attribute filter(s)
+| Long format VIEWSIM file for project C-XOR21
+|
+DW C-XOR21 5 242265249900
+M $1I1\$1I1 NOT ( ) $1I1\QN $1I1\A
+M $1I2\$1I1 OR2 ( ) $1I2\Q $1I2\A $1I2\B
+M $1I3\$1I1 AND2 ( ) $1I3\Q $1I3\A $1I3\B
+M $1I4\$1I1 AND2 ( ) $1I4\Q $1I4\A $1I4\B
+M $1I6\$1I1 NOT ( ) $1I6\QN $1I6\A
+= $1N13 $1I4\A
+= $1N13 $1I1\QN
+= $1N21 $1I3\B
+= $1N21 $1I6\QN
+= $1N23 $1I4\Q
+= $1N23 $1I2\A
+= $1N25 $1I3\Q
+= $1N25 $1I2\B
+= A $1I3\A
+= A $1I1\A
+= B $1I4\B
+= B $1I6\A
+= Q $1I2\Q
+WD

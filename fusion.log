@@ -1,0 +1,11 @@
+| Command used:
+| c:\mentorgraphics_2004\2004\sim\fusion\win32\bin\fusion.exe -vsm c-or41.vsm -cmd c-or41.cmd 
+|
+| Typical delays in use.
+| All delays scaled by 1.
+| Design processing complete.
+| Simulation time rolled back to 0.0ns.
+| [I] Starting Vwaves process: ....
+| Simulation stopped at 300.0ns.
+sdisplay $1N19 $1N21 A B C D Q 
+| [I] Closing ITC connection with the waveform tool(PID 784)

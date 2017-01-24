@@ -1,0 +1,23 @@
+$version
+    Viewlogic Simulation .vwf version 1.0
+$end
+
+$date
+    Tue Jan 24 09:49:27 2017
+$end
+$timescale
+    100 ps
+$end
+#0
+$var wire 1 ! A $end
+$dumpvars X! $end
+$var wire 1 " QN $end
+$dumpvars X" $end
+$enddefinitions $end
+#0
+1!
+0"
+#1000
+0!
+1"
+#2000

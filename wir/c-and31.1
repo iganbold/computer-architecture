@@ -1,0 +1,29 @@
+| Wirelist created using version 5.2.
+V 5.2
+DESIGN_MAY_CONTAIN_RIPPERS__RECOMPILATION_AND_RELINKING_WITH_RIPPER_VERSION_OF_VIEWBASE_REQUIRED
+K 124329034600 c-and31
+DW c-and31
+|Q myLabs:custtom_and_gate_2in_1out 1
+AS myLabs:custtom_and_gate_2in_1out PINORDER=A B Q
+AS myLabs:custtom_and_gate_2in_1out INOV_VER_REC=14:25_1-24-17
+AS builtin:in PINORDER=IN
+AS builtin:in IN
+AP builtin:in 1 PINTYPE=IN
+AS builtin:out OUT
+AS builtin:out PINORDER=OUT
+AP builtin:out 1 PINTYPE=OUT
+W myLabs:custtom_and_gate_2in_1out $1I1
+I $1I1 myLabs:custtom_and_gate_2in_1out A B $1N6 
+|R 14:25_1-24-17
+W myLabs:custtom_and_gate_2in_1out $1I2
+I $1I2 myLabs:custtom_and_gate_2in_1out $1N6 C Q 
+|R 14:25_1-24-17
+P builtin:in A
+I A builtin:in A 
+P builtin:in B
+I B builtin:in B 
+P builtin:in C
+I C builtin:in C 
+P builtin:out Q
+I Q builtin:out Q 
+EW

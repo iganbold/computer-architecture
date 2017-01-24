@@ -1,0 +1,34 @@
+| Wirelist created using version 5.2.
+V 5.2
+DESIGN_MAY_CONTAIN_RIPPERS__RECOMPILATION_AND_RELINKING_WITH_RIPPER_VERSION_OF_VIEWBASE_REQUIRED
+K 121210872900 c-or41
+DW c-or41
+|Q myLabs:c-or21 1
+AS myLabs:c-or21 PINORDER=A B Q
+AS myLabs:c-or21 INOV_VER_REC=14:43_1-24-17
+AS builtin:out OUT
+AS builtin:out PINORDER=OUT
+AP builtin:out 1 PINTYPE=OUT
+AS builtin:in PINORDER=IN
+AS builtin:in IN
+AP builtin:in 1 PINTYPE=IN
+W myLabs:c-or21 $1I1
+I $1I1 myLabs:c-or21 A B $1N21 
+|R 14:43_1-24-17
+W myLabs:c-or21 $1I2
+I $1I2 myLabs:c-or21 C D $1N19 
+|R 14:43_1-24-17
+W myLabs:c-or21 $1I3
+I $1I3 myLabs:c-or21 $1N21 $1N19 Q 
+|R 14:43_1-24-17
+P builtin:out Q
+I Q builtin:out Q 
+P builtin:in D
+I D builtin:in D 
+P builtin:in C
+I C builtin:in C 
+P builtin:in A
+I A builtin:in A 
+P builtin:in B
+I B builtin:in B 
+EW
